@@ -49,3 +49,11 @@ Código fonte: https://github.com/acenelio/jdbc2
   - executeUpdate
 - Checklist:
     - Atualização simples com preparedStatement
+  
+## DELETE DATA
+- API:
+  - s
+  - 
+- Checklist:
+  - Criar DbIntegrityException
+  - Tratar a exceção de integridade referencial
