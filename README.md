@@ -15,7 +15,7 @@ JDBC (Java Database Connectivity)
 - No pacote "db", criar uma exceção personalizada DbException
 - No pacote "db", criar uma classe DB com métodos estáticos auxiliares o Obter e fechar uma conexão com o banco
 
-## Recuperar dados
+## READ DATA
 
 Script SQL: material de apoio ou https://github.com/acenelio/demo-dao-jdbc/blob/master/database.sql
 Código fonte: https://github.com/acenelio/jdbc2
@@ -32,7 +32,7 @@ Código fonte: https://github.com/acenelio/jdbc2
     - Fazer um pequeno programa para recuperar os departamentos
     - Na classe DB, criar métodos auxiliares estáticos para fechar ResultSet e Statement
 
-## Inserir dados
+## CREATE DATA
 
 - API:
     - PreparedStatement
@@ -42,3 +42,10 @@ Código fonte: https://github.com/acenelio/jdbc2
 - Checklist:
     - Inserção simples com preparedStatement
     - Inserção com recuperação de Id
+
+## UPDATE DATA
+- API:
+  - PreparedStatement
+  - executeUpdate
+- Checklist:
+    - Atualização simples com preparedStatement
