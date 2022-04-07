@@ -52,8 +52,15 @@ Código fonte: https://github.com/acenelio/jdbc2
   
 ## DELETE DATA
 - API:
-  - s
-  - 
+  - PreparedStatement
+  - executeUpdate
 - Checklist:
   - Criar DbIntegrityException
   - Tratar a exceção de integridade referencial
+
+## TRANSACTIONS DATA
+
+- API:
+  - setAutoCommit(false)
+  - commit()
+  - rollback()
