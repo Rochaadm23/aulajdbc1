@@ -1,19 +1,19 @@
 package application;
 
 import db.DB;
-import db.DbException;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Program {
+public class ConsultData {
     public static void main(String[] args) {
 
         Connection conn = null;
         Statement st = null;
         ResultSet rs = null;
+
         try {
 
             //Recuperando dados do banco
@@ -27,12 +27,10 @@ public class Program {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-
             DB.closeResultSet(rs);
             DB.closeStatement(st);
             DB.closeConnection();
         }
     }
-
 
 }
